@@ -33,7 +33,13 @@ public class ControladorEmpleado extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		//llamar al listado...
+		//instanciar la clase crud...
+		CrudEmpleadoImp crudlis=new CrudEmpleadoImp();
+		List<TblEmpleado> listado=crudlis.ListadoEmpleado();
+		request.setAttribute("listado",listado);
+		request.getRequestDispatcher("/FrmGestionarEmpleado.jsp").forward(request, response);
 	} //fin del metodo doget...
 
 	/**
@@ -73,10 +79,7 @@ public class ControladorEmpleado extends HttpServlet {
 	 //enviamos el listado hacia la vista..
 	   request.setAttribute("listado",listado);
 	   //redireccionamos 
-	   request.getRequestDispatcher("/index.jsp").forward(request, response);
-	  
-	   
-	   
+	   request.getRequestDispatcher("/FrmGestionarEmpleado.jsp").forward(request, response);
 
 	}		 //fin del metodo dopost
 

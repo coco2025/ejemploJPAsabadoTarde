@@ -4,17 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Sistema Web de Inventario</title>
+<title>Gestionar Cliente</title>
 </head>
 <body bgcolor="#c5dec9">
 <h1 align="center">
-Sistema Web de Inventario
+Gestionar Cliente
 </h1>
-<h2   align="center">
-<a href="ControladorEmpleado" style="text-decoration: none">Gestionar Empleado</a>
-</h2>
-<h2  align="center">
-<a href="ControladorCliente"  style=" text-decoration:none">Gestionar Cliente</a>
-</h2>
 </body>
 </html>
